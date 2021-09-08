@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <style media="screen">
+
+  #all
+  {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform : translate(-50%, -50%);
+  }
+
+  #bt1
+  {
+    position : absolute;
+    left : 35%;
+    top : 11%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt1:active {
+    transform: scale(0.9);
+  }
+
+  #bt2
+  {
+    position : absolute;
+    left : 45.8%;
+    top : 11%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt2:active {
+    transform: scale(0.9);
+  }
+
+  #bt3
+  {
+    position : absolute;
+    left : 56.4%;
+    top : 10.5%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt3:active {
+    transform: scale(0.9);
+  }
+
+  #bt4
+  {
+    position : absolute;
+    left : 35.1%;
+    top : 32%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt4:active {
+    transform: scale(0.9);
+  }
+
+  #bt5
+  {
+    position : absolute;
+    left : 46%;
+    top : 32%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt5:active {
+    transform: scale(0.9);
+  }
+
+  #bt6
+  {
+    position : absolute;
+    left : 56.3%;
+    top : 31.5%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt6:active {
+    transform: scale(0.9);
+  }
+
+  #bt7
+  {
+    position : absolute;
+    left : 35.2%;
+    top : 53%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt7:active {
+    transform: scale(0.9);
+  }
+
+  #bt8
+  {
+    position : absolute;
+    left : 45.8%;
+    top : 52.5%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt8:active {
+    transform: scale(0.9);
+  }
+
+  #bt9
+  {
+    position : absolute;
+    left : 56.25%;
+    top : 52.7%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt9:active {
+    transform: scale(0.9);
+  }
+
+  #bt0
+  {
+    position : absolute;
+    left : 45.9%;
+    top : 73.4%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #bt0:active {
+    transform: scale(0.9);
+  }
+
+  #star
+  {
+    position : absolute;
+    left : 56.3%;
+    top : 73.2%;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  #star:active {
+    transform: scale(0.9);
+  }
+
+  </style>
+  <meta charset="utf-8">
+  <title>public telephone</title>
+</head>
+<body bgcolor="black">
+
+  <div id="all">
+    <img src="all.png" style="width:600px;">
+  </div>
+
+  <div id="bt1">
+    <button id="1" type="button" style="border : 0; background:black;" onclick="reply_click1(this.id)" ><img src="1.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt2">
+    <button id="2" type="button" style="border : 0; background:black;" onclick="reply_click2(this.id)" ><img src="2.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt3">
+    <button id="3" type="button" style="border : 0; background:black;" onclick="reply_click3(this.id)" ><img src="3.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt4">
+    <button id="4" type="button" style="border : 0; background:black;" onclick="reply_click4(this.id)" ><img src="4.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt5">
+    <button id="5" type="button" style="border : 0; background:black;" onclick="reply_click5(this.id)" ><img src="5.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt6">
+    <button id="6" type="button" style="border : 0; background:black;" onclick="reply_click6(this.id)" ><img src="6.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt7">
+    <button id="7" type="button" style="border : 0; background:black;" onclick="reply_click7(this.id)" ><img src="7.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt8">
+    <button id="8" type="button" style="border : 0; background:black;" onclick="reply_click8(this.id)" ><img src="8.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt9">
+    <button id="9" type="button" style="border : 0; background:black;" onclick="reply_click9(this.id)" ><img src="9.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="bt0">
+    <button id="0" type="button" style="border : 0; background:black;" onclick="reply_click0(this.id)" ><img src="0.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <div id="star">
+    <button id="0" type="button" style="border : 0; background:black;" onclick="reply_clickstar(this.id)" ><img src="star.png" style="width:150px; height:150px;" ></button>
+  </div>
+
+  <script type="text/javascript">
+
+  var ids = [];
+
+  function reply_click1()
+  {
+    ids.push("1");
+    alert("1")
+  }
+
+  function reply_click2()
+  {
+    ids.push(2);
+    alert("2")
+  }
+
+  function reply_click3()
+  {
+    ids.push(3);
+    alert("3")
+  }
+
+  function reply_click4()
+  {
+    ids.push(4);
+    alert("4")
+  }
+
+  function reply_click5()
+  {
+    ids.push(5);
+    alert("5")
+  }
+
+  function reply_click6()
+  {
+    ids.push(6);
+    alert("6")
+  }
+
+  function reply_click7()
+  {
+    ids.push(7);
+    alert("7")
+  }
+
+  function reply_click8()
+  {
+    ids.push(8);
+    alert("8")
+  }
+
+  function reply_click9()
+  {
+    ids.push(9);
+    alert("9")
+  }
+
+  function reply_click0()
+  {
+    ids.push(0);
+    alert("0")
+  }
+
+  function reply_clickstar()
+  {
+    var p1 = "6,8,7,3,8,6,4,9,6,6";
+    var p2 = ids;
+
+    if( p1 != p2 ) {
+      alert("비밀번호가 일치하지않습니다. \n다시입력해보세요.");
+      window.location.reload();
+      return false;
+    } else{
+      alert("비밀번호가 일치합니다");
+      var audio = new Audio("sd.mp3")
+      audio.play()
+      return true;
+    }
+  }
+
+  </script>
+
+</body>
+</html>
